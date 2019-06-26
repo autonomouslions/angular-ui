@@ -1,1 +1,71 @@
 /* You can add global styles to this file, and also import other style files */
+
+$ing-orange: #FE7A22;
+$light-grey: #f7f7f9;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.content {
+  flex: 1;
+}
+
+header {
+  border-bottom: 1px solid grey;
+  background-color: $ing-orange;
+  color: #232323;
+  h1 {
+    padding: 0 1rem;
+    line-height: 50px;
+    color: black;
+    display: inline-block;
+  }
+  nav {
+    display: block;
+  }
+
+  nav {
+    display: inline-block;
+    padding: 0 1rem;
+    ul li {
+      display: inline;
+      a {
+        font-size: 20px;
+        padding: 15px .4rem;
+        text-decoration: none;
+        color: white;
+        &.active {
+          text-decoration: underline;
+        }
+        &:hover {
+          text-decoration: underline;
+          color: $light-grey;
+        }
+      }
+
+    }
+  }
+}
+
+.content {
+  padding: 1rem 3rem;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 1px solid grey;
+}

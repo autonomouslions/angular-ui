@@ -1,0 +1,7 @@
+<nav>
+  <ul>
+    <li *ngFor="let page of pages">
+      <a [routerLink]="page.route" routerLinkActive="active">{{ page.name }}</a>
+    </li>
+  </ul>
+</nav>
